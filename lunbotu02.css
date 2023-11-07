@@ -1,0 +1,53 @@
+.wrap{
+    width: 1800px;   
+    height: 790px;
+  position: relative;
+  overflow: hidden; 
+  
+}
+.box{
+  position: absolute;
+  width: calc(1800px*5);
+animation: donghua 8s linear infinite;
+} 
+.box img{
+  float: left;
+  width: 1800px;
+  height: 790px; 
+  
+} 
+ @keyframes donghua{
+    0%{
+        transform: translateX(0px);
+    }
+    10%{
+        transform: translateX(0px);
+    }
+    25%{
+        transform: translateX(-1800px);  
+    }
+35%{
+    transform: translateX(-1800px);
+}
+50%{
+    transform: translateX(-3600px);  
+}
+60%{
+    transform: translateX(-3600px);
+}
+75%{
+    transform: translateX(-5400px);
+}
+85%{
+    transform: translateX(-5400px);
+}
+    100%{
+        transform: translateX(-5400px);
+    }    
+  /* from{
+    transform: translateX(0px);
+}
+to{
+    transform: translateX(-4449px);
+}   */
+}

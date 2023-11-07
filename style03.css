@@ -1,0 +1,184 @@
+@charset "utf-8";
+.three{
+  color:rgb(169, 169, 234);
+  text-align: center;
+  font-size: 100px;
+  text-shadow: 0 0 10px  rgb(184, 170, 210);
+padding-top: 150px;
+}
+*{
+  margin: 0;
+  padding: 0;
+}
+.main{
+  width: 1700px;
+  height: 500px;
+  margin-top: 0px;
+  background: url("9.png");
+}
+.people{
+    position: relative;
+              margin-top: 100px;
+              margin-left: 100px;
+              width: 60px;
+              animation: run 5s linear infinite;
+                
+}
+.tou{
+  width: 50px;
+  height:50px ;
+  position: relative;
+  border: 5px solid rgb(22, 20, 20);
+/*margin-top: 362px;
+margin-left: 1457px; */ 
+border-radius: 50%;
+}
+.tou::before{
+  content: "";
+    width: 60px;
+    height:20px ;
+    position: absolute;
+    background-color: black;
+/*margin-top: 250px;
+margin-left: 1500px;*/
+top: -10px;
+left: -5px;
+border-radius: 20%;
+}
+.tou::after{
+  content: "";
+    width: 50px;
+    height:30px ;
+    position: absolute;
+background-color: black;
+/*margin-top: 355px;
+margin-left: 1493px;*/
+top: -30px;
+left: 0px;
+border-radius: 20%;
+}
+
+.jing{
+  content: "";
+    width: 8px;
+    height:10px ;
+    position: absolute;
+    background-color: rgb(56, 54, 54);
+/*margin-top: 460px;
+margin-left: 1500px;   */
+top: 60px;
+left: 25px;
+
+}
+.shenti{
+  content: "";
+    width: 50px;
+    height:150px ;
+    position: absolute;
+    border: 5px solid black;
+   /* background-color: rgb(56, 54, 54);*/
+/*margin-top: 470px;
+margin-left: 1455px;  */
+top: 70px;
+left: 0px;
+
+}
+.arm1{
+width: 5px;
+height: 180px;
+position: absolute;
+background-color: black;
+top: 65px;
+left:24px ;
+transform: rotate(15deg);
+transform-origin: 0 0;
+animation: armone .8s linear infinite;
+}
+.arm2{
+  width: 5px;
+  height: 180px;
+  position: absolute;
+  background-color: black;
+  top: 65px;
+  left:24px ;
+  transform: rotate(-15deg);
+  transform-origin: 0 0;
+  animation: armtwo .8s linear infinite;
+}
+.leg1{
+    width: 5px;
+    height:250px ;
+    position: absolute;
+    background-color: rgb(56, 54, 54);
+/*margin-top: 570px;
+margin-left: 1500px;*/
+top: 230px;
+left: 20px;
+transform: rotate(-15deg);
+transform-origin: 0 0;
+animation: legone .8s linear infinite;
+
+}
+.leg2{
+    width: 5px;
+    height:250px ;
+    position: absolute;
+    background-color: rgb(56, 54, 54);
+/*margin-top: 570px;
+margin-left: 1530px;  */
+top: 230px;
+left: 20px;
+transform: rotate(15deg);
+transform-origin: 0 0;
+animation: legtwo .8s linear infinite;
+
+}
+@keyframes armone{
+  0%{
+    transform: rotate(15deg);
+  }
+  50%{
+    transform: rotate(-15deg);
+  }
+  0%{
+    transform: rotate(15deg);
+  }
+}
+@keyframes armtwo{
+  0%{
+    transform: rotate(-15deg);
+  }
+  50%{
+    transform: rotate(15deg);
+  }
+  0%{
+    transform: rotate(-15deg);
+  }
+}
+@keyframes legone{
+  0%{
+    transform: rotate(-15deg);
+  }
+  50%{
+    transform: rotate(15deg);
+  }
+  0%{
+    transform: rotate(-15deg);
+  }
+}
+@keyframes legtwo{
+    0%{
+      transform: rotate(15deg);
+    }
+    50%{
+      transform: rotate(-15deg);
+    }
+    0%{
+      transform: rotate(15deg);
+    }
+  }
+  @keyframes run{
+    0%{transform: translate(0);}
+    100%{transform: translate(2000px);}
+  }
+  

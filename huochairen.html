@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>火柴人</title>
+  <style>
+    .two{
+    color: rgb(222, 47, 65);
+    text-align: center;
+    font-size: 100px;
+    text-shadow: 0 0 10px rgb(84, 84, 205);
+  padding-top: 150px;
+  }
+  </style>
+</head>
+<body>
+    <div class="two">
+        over!!!<br/> 请退出！！！
+    </div>
+   
+    <div >
+         <!--创建画布-->
+    <canvas id="huochairen" width="2000" height="750"></canvas>
+        <script lang="javascript">
+            //获取画布
+             var canvas = document.getElementById("huochairen");
+             //获取画笔
+             var pens = canvas.getContext("2d");//二维
+             //绘制帽子
+             pens.beginPath();
+             pens.moveTo(1700,70);
+             pens.lineTo(1740,70);
+             pens.lineWidth='10';
+             pens.stroke();
+             pens.beginPath();
+             pens.moveTo(1705,65);
+             pens.lineTo(1735,65);
+             pens.lineWidth='10';
+             pens.stroke();
+         //绘制头部
+         pens.beginPath();
+         pens.arc(1720,103,30,0,Math.PI*2);
+         pens.lineWidth='5';
+         pens.stroke();
+         //绘制身体
+         pens.beginPath();
+         pens.moveTo(1720,130);
+         pens.lineTo(1720,150);
+         pens.lineWidth='5';
+         pens.stroke();
+         pens.beginPath();
+         pens.moveTo(1700,150);
+         pens.lineTo(1740,150);
+         pens.lineTo(1740,260);
+         pens.lineTo(1700,260);
+         pens.closePath();
+        // pens.fill();
+        // pens.fillStyle="#fff";
+         //pens.lineWidth='25';
+         pens.stroke();
+         //绘制文件夹
+             pens.beginPath();
+             pens.moveTo(1680,200);
+             pens.lineTo(1760,200);
+             pens.lineTo(1760,250);
+             pens.lineTo(1680,250);
+             pens.closePath();
+            // pens.fillStyle="black";
+            // pens.fill();
+             pens.lineWidth='2';
+             pens.stroke();
+             //绘制手臂
+             pens.beginPath();
+             pens.moveTo(1720,140);
+             pens.lineTo(1760,200);
+             pens.lineTo(1720,240);
+             pens.lineWidth='5';
+             pens.stroke();
+     //绘制腿部
+     pens.beginPath();
+     pens.moveTo(1695,400);
+     pens.lineTo(1720,270);
+     pens.lineTo(1750,400);
+     pens.lineTo(1720,275);
+     pens.lineWidth='10';
+     pens.stroke();
+     //绘制脚部
+     pens.beginPath();
+     pens.arc(1685,400,15,0,1*Math.PI,true);
+     pens.closePath();
+     pens.lineWidth='5';
+     pens.stroke();
+     //绘制脚部
+     pens.beginPath();
+     pens.arc(1740,400,15,0,1*Math.PI,true);  
+     pens.closePath();
+     pens.lineWidth='5';
+     pens.stroke();
+     
+     
+         </script>
+    </div>
+    
+
+    
+</body>
+</html>
